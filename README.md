@@ -32,7 +32,7 @@ The architecture of the mini honeynet in Azure consists of the following compone
 
 For the "BEFORE" metrics, all resources were originally deployed and exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources were deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
+For the "AFTER" metrics, I implemented some security controls in accordance with NIST 800-53 (SC-7). Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoints
 
 ## Attack Maps Before Hardening / Security Controls
 <img width="858" alt="Linux SSH fail 24h before" src="https://github.com/user-attachments/assets/5481237d-67f7-41b0-8ccc-b7f451847b61">
